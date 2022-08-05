@@ -9,13 +9,13 @@ header {
   background-color: #FF9A4B;
 }
 
-.blog-box {
+.step-box {
   width: 960px;
   margin: 50px auto;
   display: flex;
 }
 
-.blog-item {
+.step {
   width: 300px;
   margin-right: 30px;
   padding: 10px;
@@ -24,11 +24,11 @@ header {
 }
 
 
-.blog-item:last-child {
+.step:last-child {
   margin-right: 0;
 }
 
-.step {
+.step-name {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -64,4 +64,28 @@ h3 {
 footer {
   height: 50px;
   background-color: #AAAAAA;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  .step-box {
+    width: 100%;
+    display: block;
+  }
+
+  .step {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .step:last-child {
+    margin: 0 auto;
+  }
+
+  footer {
+    width: 100%;
+  }
 }
